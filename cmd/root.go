@@ -35,7 +35,7 @@ var cfgFile string
 var rootCmd = &cobra.Command{
 	Use:   "pcalc",
 	Short: "A simple CLI calculator supporting basic arithmetic operations",
-	Long:  `pcalc is a command-line calculator built with Go and Cobra. It supports basic arithmetic
+	Long: `pcalc is a command-line calculator built with Go and Cobra. It supports basic arithmetic
 operations such as addition, subtraction, multiplication, and division. Each operation is a
 dedicated command, allowing quick and efficient calculations directly from your terminal.`,
 }

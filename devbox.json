@@ -3,7 +3,11 @@
   "description": "Instant, easy, and predictable go development environment",
   "packages": [
     "go@latest",
-    "cobra-cli@latest"
+    "cobra-cli@latest",
+    "extism-cli@latest",
+    "zig@latest",
+    "rustup@latest",
+    "nodejs@latest"
   ],
   "env": {
     "GOPATH": "$HOME/go/",
@@ -11,7 +15,9 @@
   },
   "shell": {
     "init_hook": [
-      "export \"GOROOT=$(go env GOROOT)\""
+      "export \"GOROOT=$(go env GOROOT)\"",
+      "rustup default stable",
+      "cargo fetch"
     ],
     "scripts": {
       "tidy": ["go mod tidy"]

@@ -43,6 +43,8 @@ export "GOROOT=$(go env GOROOT)"
 
 * [go@latest](https://www.nixhub.io/packages/go)
 * [cobra-cli@latest](https://www.nixhub.io/packages/cobra-cli)
+* [extism-cli@latest](https://www.nixhub.io/packages/extism-cli)
+* [zig@latest](https://www.nixhub.io/packages/zig)
 
 ## Script Details
 
