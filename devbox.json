@@ -1,0 +1,20 @@
+{
+  "name":        "go devbox",
+  "description": "Instant, easy, and predictable go development environment",
+  "packages": [
+    "go@latest",
+    "cobra-cli@latest"
+  ],
+  "env": {
+    "GOPATH": "$HOME/go/",
+    "PATH":   "$PATH:$HOME/go/bin"
+  },
+  "shell": {
+    "init_hook": [
+      "export \"GOROOT=$(go env GOROOT)\""
+    ],
+    "scripts": {
+      "tidy": ["go mod tidy"]
+    }
+  }
+}
