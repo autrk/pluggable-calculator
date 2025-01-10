@@ -8,7 +8,7 @@ pub fn build(b: *std.Build) !void {
     });
     const pdk_module = b.dependency("extism-pdk", .{ .target = target, .optimize = optimize }).module("extism-pdk");
     var plugin = b.addExecutable(.{
-        .name = "zig-pdk-template",
+        .name = "add",
         .root_source_file = b.path("src/main.zig"),
         .target = target,
         .optimize = optimize,
@@ -19,7 +19,7 @@ pub fn build(b: *std.Build) !void {
     plugin.root_module.addImport("extism-pdk", pdk_module);
 
     b.installArtifact(plugin);
-    const plugin_example_step = b.step("zig-pdk-template", "Build plugin");
+    const plugin_example_step = b.step("add", "Build plugin");
     plugin_example_step.dependOn(b.getInstallStep());
 
     // Run test using extism CLI

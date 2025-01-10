@@ -1,5 +1,5 @@
 {
-  "name":        "go devbox",
+  "name": "go devbox",
   "description": "Instant, easy, and predictable go development environment",
   "packages": [
     "go@latest",
@@ -11,7 +11,7 @@
   ],
   "env": {
     "GOPATH": "$HOME/go/",
-    "PATH":   "$PATH:$HOME/go/bin"
+    "PATH": "$PATH:$HOME/go/bin"
   },
   "shell": {
     "init_hook": [
@@ -20,7 +20,24 @@
       "cargo fetch"
     ],
     "scripts": {
-      "tidy": ["go mod tidy"]
+      "build-add": [
+        "pushd ./plugins/src/add > /dev/null",
+        "zig build",
+        "cp ./zig-out/bin/add.wasm ../../wasm",
+        "popd > /dev/null"
+      ],
+      "build-substract": [
+        "pushd ./plugins/src/substract > /dev/null",
+        "npm run build",
+        "cp ./dist/substract.wasm ../../wasm",
+        "popd > /dev/null"
+      ],
+      "build-multiply": [
+        "pushd ./plugins/src/multiply > /dev/null",
+        "cargo build --target wasm32-unknown-unknown --release",
+        "cp ./target/wasm32-unknown-unknown/release/multiply.wasm ../../wasm",
+        "popd > /dev/null"
+      ]
     }
   }
 }
