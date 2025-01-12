@@ -1,5 +1,5 @@
 {
-  "name": "go devbox",
+  "name":        "go devbox",
   "description": "Instant, easy, and predictable go development environment",
   "packages": [
     "go@latest",
@@ -7,11 +7,12 @@
     "extism-cli@latest",
     "zig@latest",
     "rustup@latest",
-    "nodejs@latest"
+    "nodejs@latest",
+    "tinygo@latest"
   ],
   "env": {
     "GOPATH": "$HOME/go/",
-    "PATH": "$PATH:$HOME/go/bin"
+    "PATH":   "$PATH:$HOME/go/bin"
   },
   "shell": {
     "init_hook": [
@@ -30,6 +31,12 @@
         "pushd ./plugins/src/substract > /dev/null",
         "npm run build",
         "cp ./dist/substract.wasm ../../wasm",
+        "popd > /dev/null"
+      ],
+      "build-power": [
+        "pushd ./plugins/src/power > /dev/null",
+        "tinygo build -target wasi -o power.wasm main.go",
+        "cp ./power.wasm ../../wasm",
         "popd > /dev/null"
       ],
       "build-multiply": [

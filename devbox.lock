@@ -259,6 +259,54 @@
         }
       }
     },
+    "tinygo@latest": {
+      "last_modified": "2024-12-31T22:49:03Z",
+      "resolved": "github:NixOS/nixpkgs/81934660d6e9ea54d2f0cdee821e8533b10c221a#tinygo",
+      "source": "devbox-search",
+      "version": "0.35.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mjd06q1z0xg5zmaqv2apwqgjll8af9cm-tinygo-0.35.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/mjd06q1z0xg5zmaqv2apwqgjll8af9cm-tinygo-0.35.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i9svsl8d5hbkgc8hfjb0vdzp5panaw6j-tinygo-0.35.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/i9svsl8d5hbkgc8hfjb0vdzp5panaw6j-tinygo-0.35.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4hcgl4kh4fzqa472bzsrhrq4xl2rr43a-tinygo-0.35.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4hcgl4kh4fzqa472bzsrhrq4xl2rr43a-tinygo-0.35.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fffkf1ca1rbihkq2x4vls20r33snl5ys-tinygo-0.35.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fffkf1ca1rbihkq2x4vls20r33snl5ys-tinygo-0.35.0"
+        }
+      }
+    },
     "zig@latest": {
       "last_modified": "2024-12-23T21:10:33Z",
       "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#zig",

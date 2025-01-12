@@ -25,6 +25,7 @@ Scripts are custom commands that can be run using this project's environment. Th
 
 * [build-add](#devbox-run-build-add)
 * [build-multiply](#devbox-run-build-multiply)
+* [build-power](#devbox-run-build-power)
 * [build-substract](#devbox-run-build-substract)
 
 ## Environment
@@ -55,6 +56,7 @@ cargo fetch
 * [zig@latest](https://www.nixhub.io/packages/zig)
 * [rustup@latest](https://www.nixhub.io/packages/rustup)
 * [nodejs@latest](https://www.nixhub.io/packages/nodejs)
+* [tinygo@latest](https://www.nixhub.io/packages/tinygo)
 
 ## Script Details
 
@@ -72,6 +74,15 @@ popd > /dev/null
 pushd ./plugins/src/multiply > /dev/null
 cargo build --target wasm32-unknown-unknown --release
 cp ./target/wasm32-unknown-unknown/release/multiply.wasm ../../wasm
+popd > /dev/null
+```
+&ensp;
+
+### devbox run build-power
+```sh
+pushd ./plugins/src/power > /dev/null
+tinygo build -target wasi -o power.wasm main.go
+cp ./power.wasm ../../wasm
 popd > /dev/null
 ```
 &ensp;
