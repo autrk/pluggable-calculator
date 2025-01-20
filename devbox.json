@@ -8,7 +8,9 @@
     "zig@latest",
     "rustup@latest",
     "nodejs@latest",
-    "tinygo@latest"
+    "tinygo@latest",
+    "dotnet-sdk@latest",
+    "wasm-tools@latest"
   ],
   "env": {
     "GOPATH": "$HOME/go/",
@@ -21,6 +23,9 @@
       "cargo fetch"
     ],
     "scripts": {
+      "devcontainer": [
+        "docker run -it -v $(pwd):/code pcalc-devbox"
+      ],
       "build-add": [
         "pushd ./plugins/src/add > /dev/null",
         "zig build",

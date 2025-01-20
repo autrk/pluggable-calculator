@@ -49,6 +49,54 @@
         }
       }
     },
+    "dotnet-sdk@latest": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#dotnet-sdk",
+      "source": "devbox-search",
+      "version": "8.0.404",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8h98wxxq7fdikqq12fzi1dwcwap5swkf-dotnet-sdk-wrapped-8.0.404",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8h98wxxq7fdikqq12fzi1dwcwap5swkf-dotnet-sdk-wrapped-8.0.404"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x6z22xl9slnf8dggx7a29s5dhkgbfnb1-dotnet-sdk-wrapped-8.0.404",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/x6z22xl9slnf8dggx7a29s5dhkgbfnb1-dotnet-sdk-wrapped-8.0.404"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b8v4p3c0yb9zxxa9m9bcf14g228yy7w6-dotnet-sdk-wrapped-8.0.404",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/b8v4p3c0yb9zxxa9m9bcf14g228yy7w6-dotnet-sdk-wrapped-8.0.404"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bqh5bmn8y3795zy60mv1s9qdq1wcb4dk-dotnet-sdk-wrapped-8.0.404",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bqh5bmn8y3795zy60mv1s9qdq1wcb4dk-dotnet-sdk-wrapped-8.0.404"
+        }
+      }
+    },
     "extism-cli@latest": {
       "last_modified": "2024-12-23T21:10:33Z",
       "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#extism-cli",
@@ -304,6 +352,54 @@
             }
           ],
           "store_path": "/nix/store/fffkf1ca1rbihkq2x4vls20r33snl5ys-tinygo-0.35.0"
+        }
+      }
+    },
+    "wasm-tools@latest": {
+      "last_modified": "2025-01-11T15:21:40Z",
+      "resolved": "github:NixOS/nixpkgs/590cc22eefd616c8f90608870d28afe25d37e8b8#wasm-tools",
+      "source": "devbox-search",
+      "version": "1.223.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dfljij9yck8yf1jfxqh0cmp53wk3sbpb-wasm-tools-1.223.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dfljij9yck8yf1jfxqh0cmp53wk3sbpb-wasm-tools-1.223.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0iz933qlzpmiw5mcyr959vpd2gjp9ryk-wasm-tools-1.223.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0iz933qlzpmiw5mcyr959vpd2gjp9ryk-wasm-tools-1.223.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0b0ka8ksglydzrg2cjf0bzd0q1iyp78d-wasm-tools-1.223.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0b0ka8ksglydzrg2cjf0bzd0q1iyp78d-wasm-tools-1.223.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8dvzggxla3rfvg6gi23km952c9cr435j-wasm-tools-1.223.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8dvzggxla3rfvg6gi23km952c9cr435j-wasm-tools-1.223.0"
         }
       }
     },
